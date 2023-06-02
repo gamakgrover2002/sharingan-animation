@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharingan</title>
+    <style>
+      #container{
+        display: flex;
+   
+   
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        background-color: white;
+      }
+     
+        #eye{
+            border: solid 2px black;
+            height: 200px;
+            width: 200px;
+            transform: rotate(45deg);
+            margin-top: 200px;
+            margin-left: 400px;
+          border-bottom-right-radius: 50%;
+          border-top-left-radius: 50%;
+          border-width: 15px;
+          background-color: black;
+        }
+        #circle{
+            transform: rotate(45deg);
+            border-style: solid;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-image: url("./download2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: mymove 2s infinite, change 2s infinite;
+            border-width: 4px;
+        }
+        @keyframes mymove {
+0% {transform: rotate(45deg);}
+ 
+  100% {transform: rotate(405deg);}
+ 
+
+}
+@keyframes change{
+  0%{
+    background-image: url("download2.jpg");
+  }
+  100%{
+    background-image: url("download.svg");
+  }
+  
+}
+#head{
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+  <div id = "head">
+  <h1>Welcome to my Genjutsu</h1>
+  <h4>~Uchiha Itachi</h4></div>
+  <div id = "container">
+
+    <div id = "eye">
+    <div id = "circle">
+
+    </div>
+    </div>
+    <div id = "eye">
+      <div id = "circle">
+  
+      </div>
+      </div>
+    </div>
+    
+</body>
+</html>
