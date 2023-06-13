@@ -2,76 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharingan</title>
+    <title>Document</title>
     <style>
-      #container{
-        display: flex;
-          background-image: url('images.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 500px;
-          margin-left: 400px;
-          height: 1000px;
-   
-      }
       body{
-        margin: 0;
-        padding: 0;
-        background-color: white;
-      }
-     
-   
-        #circle{
-          margin-top: 100px;
-            transform: rotate(45deg);
-          
-            height: 300px;
-            width: 300px;
-            border-radius: 50%;
-            background-image: url("./download2.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            animation: mymove 2s infinite, change 2s infinite;
-            border-width: 4px;
-            margin-left: 100px;
-      
+         
+            background-color: black;
           }
-        @keyframes mymove {
-0% {transform: rotate(45deg);}
- 
-  100% {transform: rotate(405deg);}
- 
-
-}
-@keyframes change{
-  0%{
-    background-image: url("download2.jpg");
-  }
-  100%{
-    background-image: url("download.svg");
-  }
-  
-}
-#head{
-  text-align: center;
-}
-
+     #container{
+            display: flex;
+            gap: 200px;
+            padding: 100px;
+            margin-left: 150px;
+          }
+       
+     #eye1{
+            background-image: url('./1tomoe.png');
+            width: 250px;
+            height:250px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            animation: rotate 4s infinite;
+    
+            margin-left : 75px;
+           }
+           
+     #eye2{
+            background-image: url('./1tomoe.png');
+            width: 250px;
+            height:250px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            animation: rotate2 4s infinite;
+             margin-left : 75px;
+           }
+    
+     #itachi{
+        background-image: url(itachi.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 600px;
+        padding-top: 63px;
+       box-shadow:  0px 0px 20px 20px red;
+     }
+     #madara{
+        background-image: url(madara.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 600px;
+        padding-top: 63px;
+        box-shadow:  0px 0px 20px 20px red;
+     }
+     #text{
+        color: red;
+        font-weight: 400;
+        font-size: 100px;
+        margin-left: 500px;
+        box-shadow:  0px 0px 20px 20px red;
+        height: 100px;
+        width: 600px;  
+     }
+     @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+                background-image: url("1tomoe.png");
+            }
+            33.3%{
+                background-image: url("2tomoe.png");
+                transform: rotate(360deg);
+            }
+            66.6%{
+                transform: rotate(720deg);
+                background-image: url("3tomoe.png");
+            }
+            99.9%{
+                transform: rotate(1080deg);
+                background-image: url("final.png");
+            }
+        }
+     @keyframes rotate2{
+            0%{
+                transform: rotate(0deg);
+                background-image: url("1tomoe.png");
+            }
+            33.3%{
+                background-image: url("2tomoe.png");
+                transform: rotate(360deg);
+            }
+            66.6%{
+                transform: rotate(720deg);
+                background-image: url("3tomoe.png");
+            }
+            99.9%{
+                transform: rotate(1080deg);
+                background-image: url("final2.svg");
+            }
+        }
     </style>
 </head>
+
 <body>
-  <div id = "head">
-  <h1>Welcome to my Genjutsu</h1>
-  <h4>~Uchiha Madara</h4></div>
-  <div id = "container">
-
-
-    <div id = "circle">
+    <div id ="text">SHARINGAN</div>
+    <div id ="container">
+    <div id = "itachi">
+    <div id = "eye1">
 
     </div>
-
-   
+    </div>
+    <div id = "madara">
+        <div id = "eye2">
     
+        </div>
+        </div>
+    </div>
+</body>
 </body>
 </html>
