@@ -1,0 +1,97 @@
+body{
+         
+    background-color: black;
+  }
+#container{
+    display: flex;
+    gap: 200px;
+    padding: 100px;
+    margin-left: 150px;
+  }
+
+#eye1{
+    background-image: url('./1tomoe.png');
+    width: 250px;
+    height:250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    animation: rotate 4s infinite;
+
+    margin-left : 75px;
+   }
+   
+#eye2{
+    background-image: url('./1tomoe.png');
+    width: 250px;
+    height:250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    animation: rotate2 4s infinite;
+     margin-left : 75px;
+   }
+
+#itachi{
+background-image: url(itachi.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width: 400px;
+height: 600px;
+padding-top: 63px;
+box-shadow:  0px 0px 20px 20px red;
+}
+#madara{
+background-image: url(madara.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width: 400px;
+height: 600px;
+padding-top: 63px;
+box-shadow:  0px 0px 20px 20px red;
+}
+#text{
+color: red;
+font-weight: 400;
+font-size: 100px;
+margin-left: 500px;
+box-shadow:  0px 0px 20px 20px red;
+height: 100px;
+width: 600px;  
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        background-image: url("1tomoe.png");
+    }
+    33.3%{
+        background-image: url("2tomoe.png");
+        transform: rotate(360deg);
+    }
+    66.6%{
+        transform: rotate(720deg);
+        background-image: url("3tomoe.png");
+    }
+    99.9%{
+        transform: rotate(1080deg);
+        background-image: url("final.png");
+    }
+}
+@keyframes rotate2{
+    0%{
+        transform: rotate(0deg);
+        background-image: url("1tomoe.png");
+    }
+    33.3%{
+        background-image: url("2tomoe.png");
+        transform: rotate(360deg);
+    }
+    66.6%{
+        transform: rotate(720deg);
+        background-image: url("3tomoe.png");
+    }
+    99.9%{
+        transform: rotate(1080deg);
+        background-image: url("final2.svg");
+    }
+}
